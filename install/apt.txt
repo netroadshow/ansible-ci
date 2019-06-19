@@ -1,0 +1,11 @@
+zip
+unzip
+curl
+dos2unix
+ssh
+rsync
+tar
+gzip
+git
+jq
+libpq-dev

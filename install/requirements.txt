@@ -1,0 +1,10 @@
+ansible==2.7.11
+requests
+pywinrm
+awscli
+boto3
+boto
+psycopg2-binary
+pymongo
+jinja2-cli
+passlib
