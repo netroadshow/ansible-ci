@@ -1,6 +1,7 @@
 ansible==2.8.1
 requests
 pywinrm
+pypsrp
 awscli
 boto3
 boto
