@@ -19,6 +19,11 @@ RUN PACKER_VERSION=1.4.2 && TERRAFORM_VERSION=0.11.14 && \
     ln -s /usr/local/bin/python /usr/bin/python && \
     rm -rf /tmp/install/
 
+# REMOVE THIS WHEN ANSIBLE UPDATED TO 2.8.3
+# This is a hotfix for a known issue in the aws_secret lookup plugin
+# https://github.com/ansible/ansible/pull/58722
+RUN sed -i '/aws_credentials/a \  - aws_region' /usr/local/lib/python3.7/site-packages/ansible/plugins/lookup/aws_secret.py
+
 #Setup user information for container
 USER automation
 ENV USER=automation
