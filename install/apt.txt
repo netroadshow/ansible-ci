@@ -9,3 +9,4 @@ gzip
 git
 jq
 libpq-dev
+fish
