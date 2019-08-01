@@ -11,3 +11,4 @@ pymongo
 jinja2-cli
 passlib
 bcrypt
+ansible-lint
