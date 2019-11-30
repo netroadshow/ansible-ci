@@ -12,6 +12,6 @@ boto
 python-jenkins==1.5.0
 psycopg2-binary
 pymongo
-pymssql
+pymssql<3.0
 diskcache
 zabbix-api
