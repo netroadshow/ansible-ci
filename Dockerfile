@@ -2,7 +2,7 @@ FROM python:3.7-slim
 
 ADD install/ /tmp/install/
 
-RUN PACKER_VERSION=1.4.2 && TERRAFORM_VERSION=0.11.14 && \
+RUN PACKER_VERSION=1.5.5 && TERRAFORM_VERSION=0.11.14 && \
     apt-get update && apt-get install --no-install-recommends -yy $(cat /tmp/install/apt.txt) && apt-get -yy clean && \
     curl -sS https://releases.hashicorp.com/packer/${PACKER_VERSION}/packer_${PACKER_VERSION}_linux_amd64.zip > packer.zip && \
     unzip packer.zip -d /bin && \
